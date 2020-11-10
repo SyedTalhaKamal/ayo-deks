@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="./images/logo.ico" type="image/ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&family=Libre+Baskerville:wght@400;700&family=Open+Sans:wght@300;400;600;700;800&family=Oswald:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>AyoDeks-Home</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="top">
+        <div class="container-fluid">
+            <div class="row px-0">
+                <div class="col-4">
+                    <ul class="social-ul mt-3 topsocial">
+                        <li>
+                            <a href="javascript:void(0)">
+                                <i class="fab fa-facebook socialIcons "></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <i class="fab fa-twitter socialIcons "></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <i class="fab fa-youtube socialIcons "></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <i class="fab fa-google-plus-g socialIcons "></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-4 toplogo">
+                    <div class="d-flex justify-content-center">
+                        <span class="logoback">
+                            <img src="images/logo.png">
+                            <div id="myNav" class="overlay">
+                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                <div class="overlay-content">
+                                    <a href="#">About</a>
+                                    <a href="#">Services</a>
+                                    <a href="#">Clients</a>
+                                    <a href="#">Contact</a>
+                                </div>
+                            </div>
+                            <div class="text-center togglebtn">
+                                <span onclick="openNav()">&#9776;</span>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="d-flex justify-content-end mt-3 mr-lg-5 mr-0">
+                        <a href="javascipt:void">
+                            <i class="fas fa-search"></i>
+                        </a>
+                        <a href="javascript:void(0)">
+                            <div>
+                                <h3 class="cartitem">1</h3>
+                            </div>
+                            <img src="images/bucket.png" class="position-relative">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <!--Carousel Wrapper-->
+                    <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails" data-ride="carousel">
+                        <!--Slides-->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="images/banner.png" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/bannerb.png" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/bannerc.png" alt="Third slide">
+                            </div>
+                        </div>
+                        <!--/.Slides-->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-thumb" data-slide-to="0" class="active">
+                                <img class="d-block w-100" src="images/banner1.png" class="img-fluid">
+                            </li>
+                            <li data-target="#carousel-thumb" data-slide-to="1">
+                                <img class="d-block w-100" src="images/banner2.png" class="img-fluid">
+                            </li>
+                            <li data-target="#carousel-thumb" data-slide-to="2">
+                                <img class="d-block w-100" src="images/banner3.png" class="img-fluid">
+                            </li>
+                        </ol>
+                    </div>
+                    <!--/.Carousel Wrapper-->
+                </div>
+                <div class="col-6 d-flex align-items-center">
+                    <div class="d-flex flex-column fl bannertext">
+                        <h1>AyoDeks</h1>
+                        <h2>Problem = Solutions</h2>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center scroll">
+                    <a href="#bottom1">
+                        <h3 class="fop">Scroll Down</h3>
+                    </a>
+                    <img src="images/line.png" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Pizza -->
+    <section class="pizza position-relative">
+        <div class="container-fluid">
+            <div class="col-12 text-center">
+                <h2 id="bottom1" class="fl">AyoDeks</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-12 my-lg-auto">
+                    <h3 class="fos mt-lg-0 mt-2">Product Detail</h3>
+                    <p class="fop">It is a long established fact that a reader will be distracted by the readable content of a page when
+                        looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                        of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                        Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model
+                        text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
+                    <div class="d-flex align-items-center ml-3 mt-4">
+                        <div class="d-flex align-items-center detaildiv py-2">
+                            <img src="images/wine.png" class="mx-3">
+                            <h5 class="mr-3 fop">Best For Wine Surfing</h5>
+                        </div>
+                        <div class="d-flex align-items-center detaildiv py-2">
+                            <img src="images/bbq.png" class="mx-3">
+                            <h5 class="mr-3 fop">Serving at in Home BBQ</h5>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-12 text-lg-left text-center mt-lg-0 mt-2">
+                    <img src="images/pizza.png" class="img-fluid animated zoomIn slower wow">
+                </div>
+                <div class="col-lg-4 col-12 d-lg-flex align-items-center justify-content-end discover">
+                    <h4 class="fos mt-4">
+                        <del>DISCOOVER PRODUCT</del>
+                    </h4>
+                    <hr class="discoverline">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center scroll2">
+                    <a href="#bottom2">
+                        <h3 class="fop">Scroll Down</h3>
+                    </a>
+                    <img src="images/line.png" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Us -->
+    <section class="about position-relative">
+        <div class="container">
+            <div class="col-12 text-center">
+                <h2 class="fos"id="bottom2">About us</h2>
+                <p class="fop">Di Cantina Valpolicella Negrar è la storia di uomini e donne dediti alla creazio Nullam dui dolor, sagittis
+                    ut ante eget, aliquam faucibus sem. Cras in semper ex. Mauris tincidunt purus blandit arcu ullamcorper
+                    finibus. Maecenas enim justo, facilisis condimentum justo nec, tempor semper tortor. Duis eget orci risus.
+                    Pellentesque nec dui</p>
+                <p class="fop mt-lg-4 mt-2">Praesent ac turpis turpis. Vestibulum finibus sapien ut tortor quis ultricies dolor vehicula. Etiam tempor
+                    elit sit amet lobortis condimentum. Fusce cursus tincidunt purus blandit</p>
+                <h3 class="fop">JONT NICOLIN - CEO AyoDeks</h3>
+                <h4 class="fd">Moon Theme</h4>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center scroll3">
+                    <a href="#bottom3">
+                        <h3 class="fop">Scroll Down</h3>
+                    </a>
+                    <img src="images/line.png" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Order -->
+    <section class="order">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 col-12 px-0">
+                    <img src="images/orderImg.png" class="img-fluid h-100 w-100">
+                </div>
+                <div class="col-lg-8 col-12 px-0 orderback">
+                    <h2 class="fos ml-lg-5 ml-3"id="bottom3">AyoDeks</h2>
+                    <h3 class="fos ml-lg-5 ml-3">AyoDeks</h3>
+                    <p class="fop ml-lg-5 ml-3">Di Cantina Valpolicella Negrar è la storia di uomini e donne dediti alla creazio Nullam dui dolor, sagittis
+                        ut ante eget, aliquam faucibus sem. Cras in semper ex. Mauris tincidunt purus blandit arcu ullamcorper
+                        finibus. Maecenas enim justo, facilisis condimentum justo nec, tempor semper tortor. Duis eget orci
+                        risus.</p>
+                    <a href="javascript:void(0)" class="ml-lg-5 ml-3">
+                        <button>Order now</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 col-12">
+                    <h2 class="fos">GET IN TOUCH</h2>
+                    <h3 class="fop">AyoDeks</h3>
+                    <form action="">
+                        <input type="text" class="forminput" placeholder="Your name">
+                        <input type="email" class="forminput" placeholder="Email">
+                        <input type="text" class="forminput" placeholder="Subject">
+                        <textarea class="forminput" placeholder="Mesasge" rows="2"></textarea>
+                        <a href="javascript:void(0)">
+                            <button>SEND</button>
+                        </a>
+                    </form>
+                </div>
+                <div class="col-lg-3 col-12 mt-lg-0 mt-2 map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49697.42357851387!2d-94.56122442356254!3d38.87620614118776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c0dd0b8f0e7e05%3A0x6c435a4c4513d6a8!2sGrandview%2C%20MO%2C%20USA!5e0!3m2!1sen!2s!4v1603969410061!5m2!1sen!2s" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="w-100 h-100"></iframe>
+                </div>
+                <div class="col-lg-4 col-12 my-lg-auto my-2">
+                    <h4 class="fos">CONTACT US</h4>
+                    <h5 class="fop">PO Box 16122 Collins Victoria 3000 Australia</h5>
+                    <h6 class="fop">Email: info@chiart.abcdf.com</h6>
+                    <h6 class="fop">Phone: + 33 323 34522</h6>
+                    <h6 class="fop">Fax: +33 3467888</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center footerlogo">
+                    <img src="images/footerlogo.png" class="img-fluid">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <ul class="footersocial-ul mt-3">
+                        <li>
+                            <a href="javascript:void(0)">
+                                <i class="fab fa-facebook footersocialIcons "></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <i class="fab fa-twitter footersocialIcons "></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <i class="fab fa-youtube footersocialIcons "></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <i class="fab fa-google-plus-g footersocialIcons "></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <i class="fab fa-behance footersocialIcons "></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="fos copy">AYODEKS ©COPYRIGHT 2020.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

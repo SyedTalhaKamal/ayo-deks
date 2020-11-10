@@ -1,0 +1,560 @@
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike,strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {
+  margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;}body {	line-height: 1;}ol, ul {	list-style: none;}blockquote, q {	quotes: none;}blockquote:before, blockquote:after,q:before, q:after {	content: '';	content: none;}table {	border-collapse: collapse;	border-spacing: 0;}
+ /* ======================= Global =========================================== */
+.fd{
+  font-family: 'Dawning of a New Day', cursive;
+}
+.fl{
+  font-family: 'Libre Baskerville', serif;
+}
+.fop{
+  font-family: 'Open Sans', sans-serif;
+}
+.fos{
+  font-family: 'Oswald', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* ======================= Header =========================================== */
+.top{
+  background-image: url('../images/bannerback.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 80px;
+}
+.topbanner{
+  position: relative;
+}
+.logoback{
+  background-color: white;
+  padding: 25px 15px 60px 15px;
+}
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(6,12,77);
+  background-color: rgba(6,12,77, 0.5);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+.overlay a:hover, .overlay a:focus {
+  color: #fa1900;
+}
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+.togglebtn{
+  margin-top: 30px;
+}
+.togglebtn span{
+  color: #060c4d;
+  font-size:30px;
+  cursor:pointer
+}
+.fa-search{
+  color: #090b28;
+  margin: 10px 30px 0 0;
+}
+.cartitem{
+  background: #060b4b;
+  color: white;
+  padding: 2px 4px;
+  border-radius: 100%;
+  position: absolute;
+  top: 22px;
+  transform: translateX(14px);  
+}
+.socialIcons {
+  font-size: 18px;
+  color: #030522;
+  text-align: center;
+  transition: 0.2s ease-in-out;
+}
+.socialIcons:hover {
+  color: #fa1900;
+  transition: 0.3s ease-in-out;
+}
+.social-ul>li {
+  display: inline-block ;
+  margin-left: 45px;
+}
+.carousel .carousel-indicators li {
+  width: auto;
+}
+.carousel .carousel-indicators li {
+    width: auto;
+}
+.carousel-indicators li {
+  background-color: transparent;
+}
+.carousel-indicators{
+  bottom: -45px;
+}
+.bannertext h1{
+  font-size: 106px;
+  color: #060b4b;
+}
+.bannertext h2{
+  font-size: 51px;
+  color: #050946;
+}
+.scroll{
+  margin-top: 60px;
+  z-index: 999;
+}
+.scroll h3{
+  color: #060b4b;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+  margin-bottom: 30px;
+  position: relative;
+}
+.scroll img{
+  position: absolute;
+}
+/* ======================= Pizza =========================================== */
+.pizza{
+background-color: #030522;
+  padding: 95px 0 120px 0;
+}
+.pizza h2{
+  color: #fefeff;
+  font-size: 68px;
+  margin-bottom: 10px;
+}
+.pizza h3{
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0px 0 15px 16px;
+}
+.pizza p{
+  font-size: 14px;
+  color: #a1a1a1;
+  font-weight: 300;
+  margin-left: 16px;
+  line-height: 20px;
+}
+.detaildiv{
+  border:  1px solid #4c3d46;
+}
+.detaildiv img{
+  width: 18px;
+  height: 41px;
+  object-fit: contain;
+  object-position: center;
+}
+.detaildiv h5{
+  color: #cccccc;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+}
+.pizza h4{
+  color: white;
+  font-size: 13px;
+  font-weight: 300;
+  transform: rotate(-90deg);
+  position: relative;
+}
+.discoverline{
+  width: 40px;
+  padding: 1px;
+  background-color: #e21302;
+  position: absolute;
+  right: 0;
+}
+.scroll2{
+  position: absolute;
+  margin-top: 10px;
+  z-index: 999;
+}
+.scroll2 h3{
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+  margin-bottom: 30px;
+  position: relative;
+}
+.scroll2 img{
+  position: absolute;
+}
+/* ======================= About =========================================== */
+.about{
+  padding: 206px 0 197px 0;
+  background-color: #232323;
+}
+.about h2{
+  font-size: 44px;
+  color: white;
+  font-weight: 200;
+  margin-bottom: 50px;
+}
+.about p{
+  color: #a1a1a1;
+  font-size:14px;
+  line-height: 20px;
+  width: 82%;
+  margin: auto;
+}
+.about h3{
+  font-size: 12px;
+  color: white;
+  font-style: italic;
+  font-weight: 300;
+  margin-top: 40px;
+}
+.about h4{
+  font-size: 24px;
+  color: white;
+  font-weight: 300;
+  margin-top: 5px;
+}
+.scroll3{
+  position: absolute;
+  margin-top: 2px;
+  z-index: 999;
+  left: 0;
+  right: 0;
+}
+.scroll3 h3{
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+  margin-bottom: 30px;
+  position: relative;
+}
+.scroll3 img{
+  position: absolute;
+}
+/* ======================= Order =========================================== */
+.orderback{
+  padding: 220px 0 145px 0;
+  background-color: #111111;
+}
+.order h2{
+  font-size: 220px;
+  color: white;
+  font-weight: 600;
+  -webkit-text-stroke: 1px white;
+  -webkit-text-fill-color: transparent;
+}
+.order h3{
+  font-size: 48px;
+  color: white;
+  font-weight: 300;
+  margin: 90px 0 20px 0; 
+}
+.order p{
+  font-size: 14px;
+  color: #fffefe;
+  font-weight: 300;
+  line-height: 20px;
+  width: 45%;
+}
+.order button{
+  font-size: 28px;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  margin-top: 25px;
+  border: 1px solid white;
+  padding: 5px;
+  background-color: transparent;
+  transition: 0.3s ease-in-out;
+}
+.order button:hover{
+  color: #fa1900;
+  border: 1px solid #fa1900;
+  transition: 0.3s ease-in-out;
+}
+/* ======================= Footer =========================================== */
+footer{
+  background-color: #030522;
+}
+footer h2{
+  font-size: 36px;
+  color: white;
+  font-weight: 300;
+  margin: 110px 0 0 80px;
+  letter-spacing: 6px;
+}
+footer h3{
+  font-size: 14px;
+  color: white;
+  font-weight: 300;
+  font-style: italic;
+  margin: 5px 0 40px 80px;
+}
+.forminput{
+  color: white;
+  outline: none;
+  background: transparent;
+  border: none;
+  border-bottom: 1px dashed #252634;
+  padding: 0 0 18px 0;
+  margin: 0px 0 30px 80px;
+  display: block;
+  width: 80%;
+
+}
+.forminput::placeholder {
+  color: #a1a1a1;
+  font-weight: 300;
+  font-style: italic;
+  font-family: 'Open Sans', sans-serif;
+}
+textarea{
+  resize: none;
+}
+form button{
+  background-color: #ed1400;
+  color: white;
+  padding: 20px 70px;
+  border: 1px solid #ed1400;
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: 300;
+  font-family: 'Oswald', sans-serif;
+  margin: 25px 0 0 80px;
+  transition: 0.3s ease-in-out;
+}
+form button:hover{
+  background-color: transparent;
+  color: #ed1400;
+  transition: 0.3s ease-in-out;
+}
+.map{
+  opacity: 0.3;
+}
+footer h4{
+  color: white;
+  font-size: 36px;
+  font-weight: 300;
+  margin: 0 0 0 80px;
+}
+footer h5{
+  color: #cccccc;
+  font-size: 14px;
+  font-weight: 700;
+  font-style: italic;
+  margin: 37px 0 20px 80px;
+}
+footer h6{
+  color: #cccccc;
+  font-size: 14px;
+  font-style: italic;
+  margin: 10px 0 0 80px;
+}
+.footerlogo{
+  margin: 68px 0 150px 0;
+}
+.footersocialIcons {
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  transition: 0.2s ease-in-out;
+}
+.footersocialIcons:hover {
+  color: #fa1900;
+  transition: 0.3s ease-in-out;
+}
+
+.footersocial-ul>li {
+  display: inline-block ;
+  margin:0 14px 0 14px;
+}
+.copy{
+  color: #636363;
+  font-size: 10px;
+  margin: 70px 0 65px 0;
+}
+/* #mymap{
+  height: 54%;
+} */
+/* ======================= Media Queries =========================================== */
+@media(max-width:1199px){
+  /* ======================= Header =========================================== */
+  .bannertext h1 {
+    font-size: 97px;
+  }
+  .bannertext h2 {
+    font-size: 43px;
+  }
+/* ======================= About =========================================== */
+  .about {
+    padding: 95px 0 120px 0;
+  }
+/* ======================= Order =========================================== */
+.order h2 {
+  font-size: 179px;
+}
+/* ======================= Footer =========================================== */  
+}
+@media(max-width:991px){
+/* ======================= Header =========================================== */
+.social-ul>li {
+  margin-left: 35px;
+}
+.logoback{
+  padding: 5px 15px;
+}
+.togglebtn{
+  margin-top: 5px;
+}
+.overlay-content {
+  position: relative;
+  top: 5%;
+}
+.overlay a 
+{
+  font-size: 20px
+}
+.overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+}
+.bannertext h1 {
+  font-size: 75px;
+}
+.bannertext h2 {
+  font-size: 32px;
+}
+/* ======================= Pizza =========================================== */
+/* .pizza {
+  padding-bottom: 0;
+} */
+.discover{
+  display: none;
+}
+/* ======================= About =========================================== */
+/* .about {
+  padding: 60px 0 50px 0;
+} */
+.about h2 {
+  margin-bottom: 20px;
+}
+.about h3 {
+  margin-top: 20px;
+}
+.about p {
+  width: 100%;
+}
+/* ======================= Order =========================================== */
+.orderback {
+  padding: 20px 0;
+}
+.order h3 {
+  margin: 40px 0 20px 0;
+}
+.order p {
+  width: 86%;
+}
+/* ======================= Footer =========================================== */
+form button,footer h2,footer h3,footer h4,footer h5,footer h6,.footerlogo {
+  margin: 10px 0;
+}
+.forminput{
+  margin: 10px 0 30px 10px;
+  width: 100%;
+}
+.copy{
+  margin: 15px 0;
+}
+}
+@media(max-width:767px){
+  /* ======================= Header =========================================== */
+.social-ul>li {
+  margin-left: 11px;
+}
+.bannertext h1 {
+  font-size: 48px;
+}
+.bannertext h2 {
+  font-size: 20px;
+}
+.scroll {
+  margin-top: 38px;
+}
+/* ======================= Pizza =========================================== */
+.pizza h2 {
+  font-size: 50px;
+}
+/* ======================= About =========================================== */
+/* .about {
+  padding: 40px 0 30px 0;
+} */
+/* ======================= Order =========================================== */
+.order h2 {
+  font-size: 120px;
+}
+.order h3 {
+  margin: 30px 0 20px 0;
+}
+.order button {
+  margin-top: 12px;
+}
+/* ======================= Footer =========================================== */
+
+}
+@media(max-width:480px){
+/* ======================= Header =========================================== */
+.topsocial{
+  display: none;
+}
+.bannertext h1 {
+  font-size: 30px;
+}
+.bannertext h2 {
+  font-size: 12px;
+}
+.scroll {
+  margin: 50px 0 0 0px;
+}
+.scroll h3 {
+  margin-bottom: 10px;
+}
+/* ======================= Pizza =========================================== */
+.pizza h2 {
+  font-size: 40px;
+}
+/* ======================= About =========================================== */
+/* .about {
+  padding: 20px 0 10px 0;
+} */
+/* ======================= Order =========================================== */
+.order h2 {
+  font-size: 70px;
+}
+.order h3 {
+  margin: 15px 0;
+}
+/* ======================= Footer =========================================== */
+}
